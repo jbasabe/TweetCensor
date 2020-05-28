@@ -1,5 +1,5 @@
 import re
-from io import open
+import io
 
 d = {
     'a': 'а',
@@ -12,7 +12,7 @@ d = {
     'D': 'Ꭰ',
     'e': 'е',
     'E': 'Е',
-    #   'f': '?',
+    # 'f': '?',
     'F': 'ᖴ',
     'g': 'ɡ',
     'G': 'Ԍ',
@@ -47,18 +47,18 @@ d = {
     'v': 'ᴠ',
     'V': 'Ꮩ',
     'w': 'ᴡ',
-    'W' : 'Ꮃ',
+    'W': 'Ꮃ',
     'x': 'х',
     'X': 'Х',
     'y': 'у',
     'Y': 'Ү',
-    'z' : 'ᴢ',
+    'z': 'ᴢ',
     'Z': 'Ζ'
 }
 
-with open("message.txt", 'r', encoding="utf8") as f:
+with io.open("message.txt", 'r', encoding="utf8") as f:
     message = f.read()
-with open("censored.txt", 'w', encoding="utf8") as f:
+with io.open("censored.txt", 'w', encoding="utf8") as f:
     for k in d:
         message = re.sub(k, d[k], message)
     f.write(message)
