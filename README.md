@@ -1,4 +1,4 @@
-# TweetCensor #
+﻿# TweetCensor #
 Censor tweets by changing characters with similar looking ones, not appearing in searches.
 
 ## How to use ##
@@ -15,5 +15,5 @@ THE QUICK "BROWN" FOX; JUMPS OVER THE LAZY DOG!
 Censored text:
 ```
 tհе qᴜісk "𝖻rоᴡո" fох, јᴜmрѕ оᴠеr tհе lаᴢу ԁоɡ.
-ТНЕ Q∪ІСК "ВRОᎳΝ" ᖴОХ; Ј∪МРЅ ОᏙЕR ТНЕ ᏞАΖҮ ᎠОԌ!
+ТНЕ Q∪ІСК "ВRОᎳΝ" ᖴОХ; Ј∪МРЅ ОⴸЕR ТНЕ ᏞАΖҮ ᎠОԌ!
 ```
